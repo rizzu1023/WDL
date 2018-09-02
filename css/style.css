@@ -9,6 +9,7 @@ header nav ul , footer{
 	background-color: #484b4d;
 	margin: 0;
 	text-align: center;
+	width: 100%;
 	
 
 }
@@ -41,7 +42,9 @@ footer div{
 .mypic img{
 	width: 25;
 	border: 1px solid #000000;
-	border-radius: 10%;
+	border-radius: 20px;
+	width: 300px;
+	height: 300px;
 }
 
 
@@ -87,19 +90,68 @@ footer{
 	width: 100%;
 }
 
-.gallery figure img{
-	width: 200px;
-	height: 200px;
-	border: 1px solid black;
+
+
+.heading{
+	width: 1fr;
+	height: 10px;
+	position: relative;
+	/*border-bottom: 1px solid #a0a0a0;*/
+	top: 15px;
+}
+
+.heading > h1{
+	position: relative;
+	left:30px;
+	margin:0;
+	top: 16px;
+	text-align: center;
+	/*border-bottom: 1px solid #a0a0a0;*/
+}
+
+.boxes{
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1.9em;
+	grid-row-gap:1.9em; 
+	padding:2em;
+    top: 3em;
 
 }
 
+.boxes > div {
+	background-color: #eee;
+	border: 1px solid #a0a0a0;
+	width: auto;
+	height: 350px;
+	/*border-radius: 0.2em;*/
 
-.gallery img{
-	border: 1px solid black;
+}
+
+.boxes div div img{
+	width: auto;
+	height: 300px;
 	position: relative;
-	float: left;
-	padding: 5px;
-	margin:10px;
+	left:0px;
+	top: 0px;
+}
+ 
+.boxes div > div{
+	position: relative;
+	height: 300px;
+	border-bottom: 1px solid #a0a0a0;
+}
 
+.boxes div h3{
+	position: relative;
+	text-align: center;
+	font-size: 1.2rem;
+	top: -12px;
+}
+
+
+
+.boxes div:hover{
+	background-color: #ccc;
 }
