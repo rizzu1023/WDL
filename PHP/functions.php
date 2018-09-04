@@ -29,5 +29,38 @@ function fix_rollno($rollno){
 	return $rollno;
 }
 
+$link=null;
+
+function connectdB(){
+
+	$db_host="localhost";
+
+	$db_user="root";
+
+	$db_password="root";
+
+	$db_name="AIKTC";
+
+	global $link;
+	$link=mysqli_connect($db_host,$db_user,$db_password) 
+	or die(
+		mysqli_error());
+	)
+
+	mysqli_select_db($link,$db_name) or die (mysqli_error());
+}
+
+function queryMysql($query){
+	connectdB();
+	global $link;
+	$result= mysqli_query($link,$query);
+	if(!$result){
+		echo '<div class="alert alert-danger">Failed to execute query<br>Mysql Error: '.mysqli_error($link).'</div>';
+		die();
+	}
+	mysqli_close($link);
+	return $result;
+}
+
 
 ?>
