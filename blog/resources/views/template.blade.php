@@ -10,9 +10,12 @@
 <body>
     @yield('navbar')
     @yield('content')
-            <script src="{{asset('js/apps.js')}}" type="text/javascript"></script>
+    @yield('main')
+    
+
+    <script src="{{asset('js/apps.js')}}" type="text/javascript"></script>
             
-            <script src="{{asset('js/bootstrap.js')}}" type="text/javascript"></script>
+    <script src="{{asset('js/bootstrap.js')}}" type="text/javascript"></script>
 
     @yield('scripts')
 

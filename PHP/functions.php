@@ -44,8 +44,8 @@ function connectdB(){
 	global $link;
 	$link=mysqli_connect($db_host,$db_user,$db_password) 
 	or die(
-		mysqli_error());
-	)
+		mysqli_error()
+	);
 
 	mysqli_select_db($link,$db_name) or die (mysqli_error());
 }
