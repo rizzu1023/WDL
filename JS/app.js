@@ -21,11 +21,14 @@ $(function()
 		}
 	});
 
-	// $('#semail').on('blur',function(e){
-	// 	if(/^[a-zA-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(this.value)){
-	// 		alert("Invalid mail address");
-	// 		this.value=""
-	// 		$(this).focus();
-	// 	}
-	// });
+	$('#ssmail').on('blur',function(e){
+		if(/^[a-zA-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(this.value)){
+			alert("Invalid mail address");
+			this.value=""
+			$(this).focus();
+		}
+	});
 });
+
+
+

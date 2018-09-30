@@ -2,7 +2,32 @@
 <html>
 <head>
 	<title>Your Registration Info</title>
-	<style></style>
+	<style type="text/css">
+    	.form-input{
+    		display: block;
+    	}
+    	#male,#female{ 
+    		display: inline;
+    	}
+    	#add{
+    		display: block;
+    	}
+		table{
+			border:2px solid black;
+			position: relative;
+			left:50%;
+			top: 50%;
+			transform: translate(-50%,50%);
+			width: 900px;
+			height: 300px;
+		}
+		table td{
+			padding: 2px;
+		}
+		table tr:nth-child(odd){
+			background: lightblue;
+		}
+    </style>
 </head>
 <body>
 

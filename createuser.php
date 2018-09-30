@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rizwan: front-end Developer</title>
-            <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Mohammed Rizwan</title>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+            
     </head>
 <body>
     <header>
@@ -39,7 +40,7 @@
             </fieldset>
             <fieldset class="form-group">
                 <label for="mobile">Mobile Number</label>
-                <input class="form-control" type="number" maxlenght="10" id="mobile" name="mobile" required>
+                <input class="form-control" type="number" maxlenght="10" id="mobile" name="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             </fieldset>
             <fieldset class="form-group">
                 <label for="email">Email</label>
@@ -63,17 +64,17 @@
                 <input class="form-control" type="password" id="cpass" placeholder="Repeat Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" name="cpass" required><br><span id="cpasserr"></span>
             </fieldset>
               
-            <input type="hidden" name="usertype" id="usertype" value="1" required>
               
             <input type="submit" class="btn btn-primary" value="Create Account">
     </form><br><br>
 </div>
     <footer>
         <div>
-            &copy;2018 All rights reserved - Mohammed Rizwan 
+            &copy;2018 All rights reserved - Mohammed Rizwan
         </div>
     </footer>
-    <script src="JS/jquery-3.3.1.min.js"></script>
-    <script src="js/misc.js" type="text/javascript"></script>
+    <script src="Js/jquery-3.3.1.min.js"type="text/javascript"></script>
+    <script src="Js/misc.js" type="text/javascript"></script>
+    
 </body>
 </html>
